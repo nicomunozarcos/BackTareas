@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "title": "Aliens",
+        "director": "James Cameron",
+        "year": "1986"
+    },
+    {
+        "id": 2,
+        "title": "Avatar",
+        "director": "James Cameron",
+        "year": "2012"
+    }
+]
