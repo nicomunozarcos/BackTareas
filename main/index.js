@@ -2,6 +2,7 @@ const express = require('express')
 const app = express();
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 
 //setting
@@ -19,6 +20,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 // routes
 app.use('/api/articulos',require ('./routes/articulos'));
 app.use('/api/users', require('./routes/users'));
+app.use('/api/contratos', require('./routes/contratos'));
+app.use(cors());
 
 //starting the server
 app.listen(app.get('port'), () => {
