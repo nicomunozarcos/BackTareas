@@ -1,12 +1,11 @@
 
 const mysql = require('mysql');
-const { promisify } = require('util');
 
 const database = {
-    host: '149.91.92.4',
-    user: 'user_telmi',
-    password: 'Telecom2023',
-    database: 'telmi',
+    host: '127.0.0.1',
+    user: 'root',
+    password: '04863013P',
+    database: 'organizador_tareas',
     port: '3306'
 }
 
@@ -27,7 +26,5 @@ pool.getConnection((err, connection) => {
     return
 });
   
-// Promisify pool querys
-pool.query = promisify(pool.query);
 
 module.exports = pool;
