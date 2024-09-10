@@ -1,10 +1,10 @@
 
-const mysql = require('mysql');
+const mysql = require('mysql2');
 
 const database = {
     host: '127.0.0.1',
     user: 'root',
-    password: '04863013P',
+    password: 'Kimono1717',
     database: 'organizador_tareas',
     port: '3306'
 }
