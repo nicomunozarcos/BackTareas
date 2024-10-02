@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 
 
 router.post('/', (req, res) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3001');
+  res.header('Access-Control-Allow-Origin', 'https://apptareaskanban.netlify.app');
   res.header('Access-Control-Allow-Methods', 'POST');
   res.header('Access-Control-Allow-Headers', 'Content-Type');
   const { email, password } = req.body;
