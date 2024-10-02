@@ -5,7 +5,7 @@ const conexion = require('../conexion');
 router.get('/:ID', (req, res) => {
   const ID = req.params.ID;
 
-  const sqlQuery = 'SELECT * FROM organizador_tareas.tableros_tareas WHERE TT_FK_US_ID = ?';
+  const sqlQuery = 'SELECT * FROM tableros_tareas WHERE TT_FK_US_ID = ?';
   conexion.query(sqlQuery, [ID], (err, results) => {
     if (err) {
       console.error('Error al ejecutar la consulta SQL: ', err);
